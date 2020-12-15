@@ -1,0 +1,197 @@
+.login-box {
+    min-height: 80vh;
+    padding: 7rem 0;
+
+    .title {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        font-family: inherit;
+        line-height: 1.25rem;
+        color: inherit;
+        text-rendering: optimizelegibility;
+    }
+
+    .login_inside_box {
+        padding: 2rem 13rem 4rem;
+        border-radius: .3125rem;
+    }
+
+    @media (max-width: 992px) {
+        .login_inside_box {
+            padding: 2rem 1rem 2rem;
+        }
+    }
+
+    .login-form {
+        input {
+            padding: 0.7rem 0.7rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .login-form {
+            margin-bottom: 2rem
+        }
+    }
+
+    .btn-login {
+        background: #4285f4;
+    }
+
+    .login-sns {
+        a {
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+            border-radius: 50%;
+            line-height: 2rem;
+            font-size: 1.25rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .register_btn {
+        border: 1px solid #ced4da;
+        font-size: .875rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-box {
+        padding: 1rem 0;
+    }
+}
+
+//右侧消息菜单
+.widget-messages {
+    padding: 1rem;
+}
+
+.widget-message-item {
+    display: block;
+    color: #666;
+    margin-left: -10px;
+    padding: 6px 10px;
+    width: 100%;
+    text-decoration: none
+}
+
+//通知
+.widget-notify {
+    .not_read {
+        background: #FFF9EA;
+    }
+
+    .notify-item {
+        position: relative;
+        border-bottom: 1px solid #EEE;
+        padding-top: 1rem;
+        padding-bottom: .625rem;
+        margin-top: 0;
+
+        .text-muted {
+            margin-bottom: .25rem
+        }
+    }
+}
+
+//站内信
+.message-list {
+    margin-bottom: 20px;
+
+    .meta {
+        font-size: 13px;
+    }
+
+    .message-item {
+        position: relative;
+        border-bottom: 1px solid #EEE;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-top: 0;
+
+        .full-text {
+            color: #777;
+            font-size: 13px;
+            line-height: 1.7;
+            overflow: hidden;
+            margin-bottom: 5px;
+            margin-top: 4px;
+        }
+    }
+}
+
+// 空间页头
+.space {
+    background-color: $white;
+
+    .space-header-desc {
+        padding: .625rem;
+        background: $gray-100;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .space-header-info {
+        .h3 {
+            display: block;
+            color: $gray-800;
+            margin: 0 0 .3125rem;
+        }
+
+        a {
+            color: var(--blue);
+        }
+
+        span {
+            line-height: 1.25rem;
+        }
+    }
+}
+
+// 空间左侧菜单
+.space-nav li.divider {
+    border-bottom: 1px solid $gray-300;
+    margin-right: 5px;
+    border-radius: 0
+}
+
+.space-main {
+    .heading {
+        padding: 1rem 0;
+        margin-bottom: 0;
+        border-bottom: .0625rem solid $border-color;
+        position: relative;
+        overflow: hidden;
+    }
+    .stream-list {
+        list-style: none;
+        padding: 0;
+        border-top: none;
+        li {
+            padding: .625rem 0;
+            border-bottom: .0625rem solid $border-color;
+            margin-top: 0;
+        }
+        .item-title {
+            font-size: .875rem;
+            color: #333;
+            line-height: 1.8125rem;
+        }
+        .title-warp {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,186 @@
+//
+// Base styles
+//
+.side_box {
+    background-color: $white;
+
+    color: $gray-800;
+
+    .box-header {
+        padding: 0.5rem 1rem;
+        margin-bottom: 0;
+        border-bottom: .0625rem solid $border-color;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box-title {
+        border-left: .25rem $blue solid;
+        padding-left: .625rem;
+        font-size: .875rem;
+    }
+
+    .box-title-link {
+        position: absolute;
+        right: 1.25rem;
+        top: .625rem;
+    }
+
+    .box-title-more {
+        position: absolute;
+        right: .625rem;
+        top: .625rem;
+        background: url(./img/more.png);
+        display: inline-block;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .box-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: .25rem;
+        padding: 1.25rem;
+
+        a {
+            font-size: .875rem;
+        }
+    }
+
+    .box-content {
+        font-size: .85rem;
+        line-height: 1.6rem;
+    }
+
+    .wx_qrcode {
+        background: $white;
+        margin-bottom: 1rem;
+        font-size: .75rem;
+        color: $gray-700;
+        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto 1rem auto;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .hot_list {
+        padding: 0 .75rem;
+
+        ul, li, ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #2464b2;
+        }
+
+        li {
+            position: relative;
+            padding: .4375rem 0;
+
+            span {
+                display: inline-block;
+            }
+
+            span.rank {
+                width: 1.0625rem;
+                height: 1.0625rem;
+                background: $cyan;
+                color: $white;
+                text-align: center;
+                font-size: .75rem;
+                margin: .25rem .3125rem 0 .625rem;
+            }
+
+            span.word {
+                width: 60%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: bottom;
+            }
+
+            span.tag {
+                width: 1.0625rem;
+                height: 1.0625rem;
+                background: #ff3852;
+                text-align: center;
+                color: $white;
+                font-size: .75rem;
+            }
+
+            span.number {
+                float: right;
+                color: $gray-500;
+            }
+
+            p.col-right {
+                position: absolute;
+                right: 0;
+                top: .625rem;
+            }
+        }
+
+        li:nth-child(1) span.rank {
+            background: #ef4749;
+        }
+
+        li:nth-child(2) span.rank {
+            background: #ff8556;
+        }
+
+        li:nth-child(3) span.rank {
+            background: #ffb456;
+        }
+
+        li.update_time {
+            font-size: .75rem;
+            color: $gray-400;
+            text-align: center;
+        }
+    }
+}
+
+//左侧菜单
+.left-menu {
+    color: $gray-800;
+    background: $white;
+    border-radius: 0 !important;
+
+    .list-group-item {
+        text-align: center;
+        border: none;
+        padding: .75rem .75rem;
+        &:first-child {
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            border-top: 2px $blue solid;;
+        }
+    }
+
+    .list-group-item-action {
+        &:active,
+        &:hover {
+            color: $blue !important;
+            background: #fff;
+        }
+    }
+
+    .active {
+        background-color: $blue;
+
+        &:active, &:hover {
+            color: #fff !important;
+            background: $blue;
+        }
+    }
+}
+

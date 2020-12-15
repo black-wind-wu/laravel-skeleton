@@ -1,0 +1,223 @@
+.download-list {
+    .media {
+        border-bottom: 1px dashed $border-color;
+
+        .download_img {
+            width: 42px;
+            height: 48px;
+        }
+
+        .download_title {
+            color: $gray-800;
+            position: relative;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+
+        .download_excerpt {
+            height: 2.8em;
+            margin-bottom: 2.5em;
+            overflow: hidden;
+            position: relative;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            color: var(--gray);
+        }
+
+        .download_userinfo {
+            width: 100%;
+            position: absolute;
+            bottom: -0.1875rem;
+        }
+
+        .download_author {
+            color: $gray-900;
+        }
+
+        .read_number_style {
+            color: var(--blue);
+        }
+
+        @include media-breakpoint-down(md) {
+            .download_img {
+                display: none;
+            }
+            .download_title {
+                font-size: .875rem;
+            }
+            .download_excerpt {
+                font-size: .75rem;
+            }
+        }
+    }
+}
+
+.download-card {
+    border-bottom: 1px dashed $border-color;
+    padding: 10px 0;
+
+    .download-img {
+        margin-right: 15px;
+        float: left;
+
+        img {
+            display: block;
+        }
+    }
+
+    .download-title {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .download-meta {
+        float: right;
+        text-align: right;
+        color: #999;
+        font-size: .875rem;
+        font-weight: 400;
+    }
+
+    .download-desc {
+        font-size: .875rem;
+        color: rgba(0, 0, 0, 0.44);
+        fill: rgba(0, 0, 0, 0.44);
+
+        a {
+            color: rgba(0, 0, 0, 0.44);
+        }
+    }
+}
+
+
+.resource_recommend {
+    background-color: $white;
+}
+
+.resource_box {
+    padding: 16px 24px 8px;
+    position: relative;
+    background: #fff;
+
+    .resource_box_info {
+        h1 {
+            margin-bottom: 8px;
+
+            .resource_title {
+                border-left: 4px $blue solid;
+                padding-left: 10px;
+                font-size: 24px;
+                display: inline-block;
+                color: #222226;
+                word-wrap: break-word;
+                word-break: normal;
+                width: 100%;
+            }
+        }
+    }
+
+    .dl_bread_score {
+        height: 32px;
+        width: 100%;
+        background-color: #f7f7fd;
+        border-radius: 4px;
+        padding: 6px 8px;
+        margin-bottom: 8px;
+        font-size: 0;
+
+        .info_box {
+            display: inline-block;
+            font-weight: 400;
+            vertical-align: top;
+
+            span {
+                font-size: 14px;
+                color: #999aaa;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 20px;
+                margin-right: 12px;
+
+                em {
+                    font-style: normal;
+                }
+
+                .cost {
+                    font-size: 14px;
+                    color: #ff9358;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+
+    dd, dl, dt {
+        line-height: 1.2;
+        list-style: none;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+
+    .resource_box_dl {
+        dd {
+            .resource_box_desc {
+                word-break: break-all;
+                font-weight: 400;
+                line-height: 24px;
+                position: relative;
+
+                .resource_description {
+                    word-break: break-all;
+                    max-height: 240px;
+                    overflow: hidden;
+                    font-size: 14px;
+                    color: #3d3d3d;
+                    position: relative;
+
+                    p {
+                        color: #555666;
+                        line-height: 24px;
+                    }
+                }
+
+                .resource_box_b {
+                    margin-bottom: 8px;
+
+                    .resource_tags {
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-top: 8px;
+                        font-weight: 400;
+
+                        a {
+                            cursor: pointer;
+                            display: inline-block;
+                            padding: 0 8px;
+                            line-height: 22px;
+                            font-size: 12px;
+                            border-radius: 11px;
+                            margin-right: 8px;
+                            word-break: break-all;
+                            text-decoration: none;
+                            border: 1px solid #ccccdb;
+                            color: #555666;
+
+                            &:hover {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .resource_box_fn {
+        margin: 0;
+        padding: 8px 0;
+    }
+}
+

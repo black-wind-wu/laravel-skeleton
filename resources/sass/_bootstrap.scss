@@ -1,0 +1,67 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// 导航
+.navbar {
+    font-size: 1rem;
+//height: 4.375rem;
+    .navbar-brand img {
+        height: 40px;
+    }
+    .navbar-right {
+        font-size: .875rem;
+    }
+}
+
+// 鼠标触动下拉
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    top: 80%;
+}
+
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.page-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1rem 0 1rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.home_tab {
+    position: relative;
+
+    a {
+        font-size: 1rem;
+    }
+
+    .nav-tabs .nav-item {
+        margin-bottom: -1px;
+    }
+
+    .nav-link {
+        box-sizing: border-box;
+        color: #757575;
+        border: none;
+    }
+
+    .nav-link.active {
+        color: #4285f4;
+        box-sizing: border-box;
+        border-color: #fff #fff #e9ecef #fff;
+        border-bottom: 3px solid #4285f4;
+        background-color: #fff;
+    }
+}

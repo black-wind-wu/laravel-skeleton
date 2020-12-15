@@ -1,0 +1,46 @@
+.page-menu {
+    border-radius: 0 !important;
+    .list-group-item {
+        text-align: center;
+        border: none;
+        &:first-child {
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            border-top: 2px $blue solid;;
+        }
+    }
+}
+
+.site-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $white;
+    background-clip: border-box;
+
+    .entry-header {
+        padding: 0.25rem .5rem 0.25rem 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid $border-color;
+    }
+
+    .entry-title {
+        line-height: 2rem;
+        padding-left: 10px;
+        font-size: 1rem;
+        border-left: 2px $blue solid;
+    }
+
+    .entry-content {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem;
+    }
+
+}
+
+

@@ -1,0 +1,92 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// 颜色配置
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$white: #fff;
+$blue: #4285f4;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// 样式参数
+//
+// 通过启用或禁用可选功能，快速修改全局样式。
+$enable-shadows: false; //阴影
+$enable-gradients: true; //渐变色
+$enable-responsive-font-sizes: true; //启用自适应字体大小
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: $gray-100;
+$body-color: $gray-900;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $gray-900;
+$link-decoration: none;
+$link-hover-color: $blue;
+$link-hover-decoration: none;
+
+$border-color: $gray-300;
+
+// 版式
+//
+// Font, line-height, and color for body text, headings, and more.
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+$font-size-base: 0.875rem;
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 2.15;
+$h2-font-size: $font-size-base * 1.95;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$grid-gutter-width: 20px !default;
+
+// Breadcrumbs
+$breadcrumb-bg: none;
+$breadcrumb-divider: quote(">");
+$breadcrumb-padding-x: 0;
+
+$custom-file-text: (
+    en: "Browse",
+    es: "Elegir",
+    zh-CN:"浏览",
+);
+
+
+$navbar-light-color: #34495e;
+$navbar-light-hover-color: $blue;
+$navbar-light-active-color: $blue;
+
+// 去掉圆角
+//$border-radius: 0;
